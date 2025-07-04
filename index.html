@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="./assets/images/logo.jpeg" style="border-radius: 50%;">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <!-- Main-container -->
+    <div id="container" class="container">
+        <!-- Input-field -->
+        <div class="input-field">
+            <input type="text" id="city" placeholder="Enter your city">
+            <img src="./assets/images/search.png" id="search-icon">
+        </div>
+        <!-- loader -->
+        <div class="loader"></div>
+        <!-- Message no city is entered -->
+        <p class="message">No city found please enter the city name.</p>
+
+            <div class="weather-img-location-div">
+                <img id="weather-img">
+                <!-- location div -->
+                <div class="location-div">
+                    <i class='bxr bx-location'></i> 
+                    <span class="location">None</span>
+                </div>
+        </div>
+        <!-- Forecast -->
+        <div class="forecast">
+            <!-- Temperature div -->
+            <div class="temprature-div">
+                  <i class='bx bx-thermometer' id="weather-icons"></i>
+                <div class="forecast-card">
+                    <span id="temprature"></span>
+                    <small class="weather-text">Temperature</small>
+                </div>
+            </div>
+            <!-- Cloudiness div -->
+            <div class="cloudiness-div">
+                <i class='bx bx-cloud' id="weather-icons"></i>
+                <div class="forecast-card">
+                    <span id="cloudiness"></span>
+                    <small class="weather-text">Cloudiness</small>
+                </div>    
+            </div>
+            <!-- Humidity div -->
+            <div class="humidity-div">
+                <i class='bxr bx-air' id="weather-icons"></i> 
+                <div class="forecast-card">
+                    <span id="humidity"></span>
+                    <small class="weather-text">Humidity</small>
+                </div>
+            </div>
+            <!-- Wind speed div -->
+            <div class="windSpeed-div">
+                 <i class='bx bx-wind' id="weather-icons"></i>
+                <div class="forecast-card">
+                    <span id="windSpeed"></span>
+                    <small class="weather-text">WindSpeed</small>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
